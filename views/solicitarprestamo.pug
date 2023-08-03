@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+html(lang='es')
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar préstamo</title>
+    <!-- Include any required CSS stylesheets here -->
+    <link rel="stylesheet" href="/stylesheets/stylesolicitudprestamo.css">
+    include navbar.pug
+  </head>
+
+  <body>
+    <div id="logo">
+      <h1 class="logo">Solicitar Préstamo</h1>
+    </div>
+
+    <div class="form-container">
+      <form action="/solicitarprestamo" method="post">
+        <div class="form-group">
+          <label for="tipoFinanciamiento">Tipo de financiamiento</label>
+          <input type="text" id="txttipoFinanciamiento" name="txttipoFinanciamiento" required>
+        </div>
+
+        <div class="form-group">
+          <label for="condicionLaboral">Condición laboral</label>
+          <input type="text" id="txtcondicionLaboral" name="txtcondicionLaboral" required>
+        </div>
+
+        <div class="form-group">
+          <label for="tipoDeCompra">Tipo de compra</label>
+          <input type="text" id="txttipoDeCompra" name="txttipoDeCompra" required>
+        </div>
+
+        <div class="form-group">
+          <label for="seleccionMoneda">Selección de moneda</label>
+          <select id="txtseleccionMoneda" name="txtseleccionMoneda">
+            <option value="colones">Colones</option>
+            <option value="dolares">Dólares</option>
+          </select>
+        </div>
+
+        <button type="submit">Enviar solicitud</button>
+      </form>
+    </div>
+
+    <!-- Include any required JavaScript scripts here -->
+    <script src="/scripts/solicitudprestamo.js"></script>
+  </body>
+
+</html>

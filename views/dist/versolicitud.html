@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Solicitar</title>
+<!-- Include any required CSS stylesheets here -->
+<link rel="stylesheet" href="/stylesheets/stylesolicitudprestamo.css"><!DOCTYPE html>
+  <html lang="es">
+    <head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/stylesheets/stylenavbar.css">
+    </head>
+    <body>
+       <div class="navbar">
+<a href="perfil" class="active">Perfil</a>
+<a href="solicitarprestamo">Solicitar préstamo</a>
+<a href="versolicitud">Ver solicitud</a>
+<a href="/">Inicio Sesion</a>
+</div>
+    </body>
+  </html></head>
+<body>
+<div id="logo">
+<h1 class="logo">Mi solicitud</h1>
+</div>
+<div class="form-container">
+<form action="/versolicitud" method="post">
+<div class="form-group">
+<label for="tipoFinanciamiento">Tipo de financiamiento</label>
+<input type="text" id="txttipoFinanciamiento" name="txttipoFinanciamiento" required>
+</div>
+<div class="form-group">
+<label for="condicionLaboral">Condición laboral</label>
+<input type="text" id="txtcondicionLaboral" name="txtcondicionLaboral" required>
+</div>
+<div class="form-group">
+<label for="tipoDeCompra">Tipo de compra</label>
+<input type="text" id="txttipoDeCompra" name="txttipoDeCompra" required>
+</div>
+<div class="form-group">
+<label for="seleccionMoneda">Selección de moneda</label>
+<select id="txtseleccionMoneda" name="txtseleccionMoneda">
+<option value="colones">Colones</option>
+<option value="dolares">Dólares</option>
+</select>
+</div>
+</form>
+</div>
+<!-- Include any required JavaScript scripts here -->
+<script src="/scripts/solicitudprestamo.js"></script>
+</body>
+</html></html>

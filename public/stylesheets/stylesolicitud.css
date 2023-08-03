@@ -1,0 +1,55 @@
+/* main.css */
+
+/* Fondo azul marino */
+body {
+    background-color: #243b55;
+    color: black;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos del formulario */
+h1 {
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2a315c; /* Color de fondo del formulario */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="radio"],
+select { /* Estilos para el menú desplegable (select) */
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #0f0d3f;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #243b55; /* Color de fondo del botón */
+    color: rgb(26, 28, 80);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #001f3f; /* Color de fondo del botón al pasar el cursor */
+}

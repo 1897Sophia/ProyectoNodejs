@@ -1,0 +1,30 @@
+doctype html
+html(lang='es')
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Perfil
+    // Include any required CSS stylesheets here
+    link(rel="stylesheet", href="/stylesheets/stylesolicitudprestamo.css")
+    include navbar.pug
+  body
+    div#logo
+      h1.logo Perfil
+    div.form-container
+      form(action="/perfil/eliminar", method="post")
+        div.form-group
+          label(for="txtNombre") Nombre
+          input(type="text", id="txtNombre", name="txtNombre", value=usuario && usuario.nombre, required)
+        div.form-group
+          label(for="txtApellido") Apellido
+          input(type="text", id="txtApellido", name="txtApellido", value=usuario && usuario.apellido, required)
+        div.form-group
+          label(for="txtCorreo") Correo
+          input(type="text", id="txtCorreo", name="txtCorreo", value=usuario && usuario.correo, required, readonly)
+        div.form-group
+          label(for="txtPassword") Password
+          input(type="text", id="txtPassword", name="txtPassword", value=usuario && usuario.contraseña, required, readonly)
+        button(type="submit", name="accion", value="eliminar") Eliminar perfil
+
+    // Include any required JavaScript scripts here
+    script(src="/scripts/solicitudprestamo.js")

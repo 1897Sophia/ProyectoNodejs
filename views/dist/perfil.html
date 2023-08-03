@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <!-- Include any required CSS stylesheets here-->
+    <link rel="stylesheet" href="/stylesheets/stylesolicitudprestamo.css"><!DOCTYPE html>
+    <html lang="es">
+      <head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/stylesheets/stylenavbar.css">
+      </head>
+      <body>
+         <div class="navbar">
+<a href="/" class="active">Inicio</a>
+<a href="perfil" class="active">Perfil</a>
+<a href="solicitarprestamo">Solicitar préstamo</a>
+<a href="login">Inicio Sesion</a>
+<a href="registro">Registrarse</a>
+</div>
+      </body>
+    </html>
+  </head>
+  <body>
+    <div id="logo">
+      <h1 class="logo">Perfil</h1>
+    </div>
+    <div class="form-container">
+      <form action="/perfil/editar" method="post">
+        <div class="form-group">
+          <label for="txtNombre">Nombre</label>
+          <input type="text" id="txtNombre" name="txtNombre" required>
+        </div>
+        <div class="form-group">
+          <label for="txtApellido">Apellido</label>
+          <input type="text" id="txtApellido" name="txtApellido" required>
+        </div>
+        <div class="form-group">
+          <label for="txtCorreo">Correo</label>
+          <input type="text" id="txtCorreo" name="txtCorreo" required readonly>
+        </div>
+        <div class="form-group">
+          <label for="txtPassword">Password</label>
+          <input type="text" id="txtPassword" name="txtPassword" required readonly>
+        </div>
+        <button type="submit" name="accion" value="actualizar">Actualizar datos</button>
+        <button type="submit" name="accion" value="eliminar">Eliminar perfil</button>
+      </form>
+    </div>
+    <!-- Include any required JavaScript scripts here-->
+    <script src="/scripts/solicitudprestamo.js"></script>
+  </body>
+</html>

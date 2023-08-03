@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+html(lang='es')
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Include any required CSS stylesheets here -->
+    <link rel="stylesheet" href="/stylesheets/stylesolicitudprestamo.css">
+    include navbar.pug
+  </head>
+
+  <body>
+    <div id="logo">
+      <h1 class="logo">Login</h1>
+    </div>
+
+    <div class="form-container">
+      <form action="/login" method="post">
+
+        <div class="form-group">
+          <label for="tipoDeCompra">Correo</label>
+          <input type="text" id="txtCorreo" name="txtCorreo" required>
+        </div>
+
+        <div class="form-group">
+          <label for="tipoDeCompra">Contraseña</label>
+          <input type="password" id="txtContraseña" name="txtContraseña" required>
+        </div>
+
+
+        <button type="submit">Iniciar Sesion</button>
+      </form>
+    </div>
+
+    <!-- Include any required JavaScript scripts here -->
+    <script src="/scripts/solicitudprestamo.js"></script>
+  </body>
+
+</html>

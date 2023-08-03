@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+html(lang='es')
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <!-- Include any required CSS stylesheets here -->
+    <link rel="stylesheet" href="/stylesheets/stylesolicitudprestamo.css">
+    include navbar.pug
+  </head>
+
+  <body>
+    <div id="logo">
+      <h1 class="logo">Registro</h1>
+    </div>
+
+    <div class="form-container">
+      <form action="/registro" method="post">
+        <div class="form-group">
+          <label for="tipoFinanciamiento">Nombre</label>
+          <input type="text" id="txtNombre" name="txtNombre" required>
+        </div>
+
+        <div class="form-group">
+          <label for="condicionLaboral">Apellido</label>
+          <input type="text" id="txtApellido" name="txtApellido" required>
+        </div>
+
+        <div class="form-group">
+          <label for="tipoDeCompra">Correo</label>
+          <input type="text" id="txtCorreo" name="txtCorreo" required>
+        </div>
+
+        <div class="form-group">
+          <label for="tipoDeCompra">Contraseña</label>
+          <input type="password" id="txtContraseña" name="txtContraseña" required>
+        </div>
+
+
+        <button type="submit">Registrarme</button>
+      </form>
+    </div>
+
+    <!-- Include any required JavaScript scripts here -->
+    <script src="/scripts/solicitudprestamo.js"></script>
+  </body>
+
+</html>
